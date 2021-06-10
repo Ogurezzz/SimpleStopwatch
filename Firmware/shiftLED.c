@@ -1,6 +1,8 @@
 #include "shiftLED.h"
+//const uint8_t numberArr[10] PROGMEM = {0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
 const uint8_t numberArr[10] PROGMEM = {0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
 const uint8_t segment[DIGITS_NUM] PROGMEM = {0x08,0x04,0x02,0x01,0x40,0x20,0x10,0x00};
+
 uint16_t screenArr[DIGITS_NUM];
 uint8_t dotPosition = 2;
 
@@ -15,6 +17,7 @@ void initShiftLED(void){
 	#ifdef DIRECT_CONNECTION_PORTD
 		LED_DDR = 0xff;
 		DIGIT_DDR = 0xff;
+		DIGIT_PORT = 0x00;
 	#endif
 }
 
@@ -69,8 +72,8 @@ void printDigit(){									//Выводит по 1 сегменту за выз�
 			SEND_LATCH;									//Передергиваем защелку
 	#endif
 	#ifdef DIRECT_CONNECTION_PORTD
-		LED_PORT = (uint8_t) screenArr[seg];
-		DIGIT_PORT = (1<<seg);
+		LED_PORT = 0xff;//(uint8_t) screenArr[seg];
+		DIGIT_PORT = (1<<seg+1);
 	#endif
 		seg++;
 		if (seg>=(DIGITS_NUM))seg=0;
