@@ -4,7 +4,9 @@
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 
-#define SOFTWARE_SPI
+//#define SOFTWARE_SPI
+#define DIRECT_CONNECTION_PORTD
+
 
 #ifdef SOFTWARE_SPI
     #define LED_DDR         DDRC
@@ -19,7 +21,19 @@
     #define SEND_DAT_0  LED_PORT &= ~_BV(LED_DAT_PIN)
 #endif
 
-#define SEGMENTS_NUM    8           //Количество сегментов
+#ifdef DIRECT_CONNECTION_PORTD
+    #define LED_DDR         DDRD
+    #define LED_PORT        PORTD
+
+	#define DIGIT_DDR		DDRB
+	#define DIGIT_PORT		PORTB
+
+#endif
+
+
+
+
+#define DIGITS_NUM    6           //Количество сегментов
 
 void initShiftLED(void);								//Инициализация перефирии для работы
 void printDigit(void);									//Вывод одного числа. Для динамической индикации.
