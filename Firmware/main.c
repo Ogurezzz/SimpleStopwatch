@@ -32,9 +32,9 @@ ISR(TIMER1_COMPA_vect) 				//Прерывание. 1 раз в секунду.
 ISR(TIMER2_COMPA_vect) 			//Прерывание. 1 раз в мс. Оставлю на будущее, мало ли пригодится где :)
 {
 	printDigit();
-	/*static uint8_t ticks = 0;
-	if (ticks>10){
-		
+	/*static uint16_t ticks = 0;
+	if (ticks>200){
+		printDigit();
 		ticks=0;
 	}
 	ticks++;*/

@@ -72,8 +72,8 @@ void printDigit(){									//Выводит по 1 сегменту за выз�
 			SEND_LATCH;									//Передергиваем защелку
 	#endif
 	#ifdef DIRECT_CONNECTION_PORTD
-		LED_PORT = 0xff;//(uint8_t) screenArr[seg];
-		DIGIT_PORT = (1<<seg+1);
+		LED_PORT = (uint8_t) screenArr[seg];
+		DIGIT_PORT = (1<<seg);
 	#endif
 		seg++;
 		if (seg>=(DIGITS_NUM))seg=0;
