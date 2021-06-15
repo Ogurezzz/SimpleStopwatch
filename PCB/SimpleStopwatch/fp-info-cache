@@ -1,38 +1,10 @@
-16932341297828701
+16934021458337701
 !MyFootprints
-3.5mm_Jack
-
-
+Connector_Lenovo_Power
+Lenovo laptop sqare power socket
+lenovo, DC, socket
 0
-10
-5
-!MyFootprints
-7SEG_3DIG_CC_0.28
-
-
-0
-11
-11
-!MyFootprints
-BC56-12SRWA
-
-
-0
-12
-12
-!MyFootprints
-Crydom_SSR_CX240D5
-
-
-0
-4
-4
-!MyFootprints
-DIP-4_350
-
-
-0
-4
+7
 4
 !MyFootprints
 FuseHolder_5x20mm
@@ -42,19 +14,54 @@ FuseHolder_5x20mm
 4
 2
 !MyFootprints
-Lenovo_DC_Socket
-
+Jack_3.5mm_ST-025
+Stereo audio jack ST-025 Dragin City
+jack, ST-025
+0
+10
+5
+!MyFootprints
+LED_7SEG_3DIG_CC_0.28
+3-digit 7-segment indicator 0.28" symbol height
 
 0
-7
+11
+11
+!MyFootprints
+LED_7SEG_3DIG_CC_0.56
+3-digit 7-segment indicator 0.56" symbol height
+7-segment, LED, indicator
+0
+12
+12
+!MyFootprints
+Module_DCDC_Mini360
+DSN-MINI-360 tiny china DCDC module board
+DCDC, step-down, mini, mini360
+0
+4
 4
 !MyFootprints
-Mini360
-
-
+SSR_CX240D5_Crydom
+Solid State Relay 220V 1A
+SSR
 0
 4
 4
+!MyFootprints
+XH2.54_1x02_P2.54
+JST XH clone 2pins
+
+0
+2
+2
+!MyFootprints
+XH2.54_1x03_P2.54
+JST XH Clone 3 pins
+connector JST XH vertical
+0
+3
+3
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
