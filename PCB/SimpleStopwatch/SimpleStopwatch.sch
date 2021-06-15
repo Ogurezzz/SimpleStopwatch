@@ -412,17 +412,6 @@ F 3 "~" H 1400 4900 50  0001 C CNN
 	1    1400 4900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+24V #PWR03
-U 1 1 60C745F2
-P 1000 4850
-F 0 "#PWR03" H 1000 4700 50  0001 C CNN
-F 1 "+24V" H 1015 5023 50  0000 C CNN
-F 2 "" H 1000 4850 50  0001 C CNN
-F 3 "" H 1000 4850 50  0001 C CNN
-	1    1000 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 4900 1000 4900
 Wire Wire Line
@@ -507,7 +496,7 @@ U 1 1 60C98E1E
 P 7350 1350
 F 0 "LED1" H 7175 2017 50  0000 C CNN
 F 1 "7SEG_3DIG_CC_v2" H 7175 1926 50  0000 C CNN
-F 2 "!MyFootprints:BC56-12SRWA" H 7350 750 50  0001 C CNN
+F 2 "!MyFootprints:LED_7SEG_3DIG_CC_0.56" H 7350 750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Made-in-China-FJ2381BH_C10704.pdf" H 6920 1380 50  0001 C CNN
 	1    7350 1350
 	1    0    0    -1  
@@ -518,7 +507,7 @@ U 1 1 60C99F65
 P 10000 1350
 F 0 "LED2" H 9825 2017 50  0000 C CNN
 F 1 "7SEG_3DIG_CC_v2" H 9825 1926 50  0000 C CNN
-F 2 "!MyFootprints:BC56-12SRWA" H 10000 750 50  0001 C CNN
+F 2 "!MyFootprints:LED_7SEG_3DIG_CC_0.56" H 10000 750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Made-in-China-FJ2381BH_C10704.pdf" H 9570 1380 50  0001 C CNN
 	1    10000 1350
 	1    0    0    -1  
@@ -641,10 +630,10 @@ F 3 "" H 4350 1500 50  0001 C CNN
 $EndComp
 NoConn ~ 8000 3650
 $Comp
-L Regulator_Switching:TPS5430DDA U?
+L Regulator_Switching:TPS5430DDA U1
 U 1 1 60C4C823
 P 2450 6250
-F 0 "U?" H 2450 6717 50  0000 C CNN
+F 0 "U1" H 2450 6717 50  0000 C CNN
 F 1 "TPS5430DDA" H 2450 6626 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 2500 5900 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 2450 6250 50  0001 C CNN
@@ -652,21 +641,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 2450 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
-U 1 1 60C50880
-P 1050 6050
-F 0 "#PWR?" H 1050 5900 50  0001 C CNN
-F 1 "+24V" H 1065 6223 50  0000 C CNN
-F 2 "" H 1050 6050 50  0001 C CNN
-F 3 "" H 1050 6050 50  0001 C CNN
-	1    1050 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 60C50C5D
 P 2400 6900
-F 0 "#PWR?" H 2400 6650 50  0001 C CNN
+F 0 "#PWR06" H 2400 6650 50  0001 C CNN
 F 1 "GND" H 2405 6727 50  0000 C CNN
 F 2 "" H 2400 6900 50  0001 C CNN
 F 3 "" H 2400 6900 50  0001 C CNN
@@ -684,10 +662,10 @@ Wire Wire Line
 Connection ~ 2400 6900
 NoConn ~ 1950 6450
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 60C55B0F
 P 3150 6150
-F 0 "C?" V 2921 6150 50  0000 C CNN
+F 0 "C2" V 2921 6150 50  0000 C CNN
 F 1 "0.1u" V 3012 6150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3150 6150 50  0001 C CNN
 F 3 "~" H 3150 6150 50  0001 C CNN
@@ -699,10 +677,10 @@ Wire Wire Line
 Wire Wire Line
 	2950 6050 3150 6050
 $Comp
-L Device:C_Small C?
+L Device:C_Small C1
 U 1 1 60C5ABA4
 P 1600 6250
-F 0 "C?" V 1371 6250 50  0000 C CNN
+F 0 "C1" V 1371 6250 50  0000 C CNN
 F 1 "22u" V 1462 6250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1600 6250 50  0001 C CNN
 F 3 "~" H 1600 6250 50  0001 C CNN
@@ -717,24 +695,21 @@ Wire Wire Line
 	1600 6050 1050 6050
 Connection ~ 1600 6050
 $Comp
-L Device:L_Small L?
+L Device:L_Small L1
 U 1 1 60C5F91C
 P 3650 6050
-F 0 "L?" V 3835 6050 50  0000 C CNN
+F 0 "L1" V 3835 6050 50  0000 C CNN
 F 1 "L_Small" V 3744 6050 50  0000 C CNN
-F 2 "" H 3650 6050 50  0001 C CNN
-F 3 "~" H 3650 6050 50  0001 C CNN
+F 2 "!MyFootprints:Inductor_CD54_Sumida" H 3650 6050 50  0001 C CNN
+F 3 "https://products.sumida.com/products/pdf/CD54.pdf" H 3650 6050 50  0001 C CNN
 	1    3650 6050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3150 6050 3500 6050
-Connection ~ 3150 6050
 $Comp
-L Diode:B120-E3 D?
+L Diode:B120-E3 D1
 U 1 1 60C61B16
 P 3500 6250
-F 0 "D?" V 3454 6329 50  0000 L CNN
+F 0 "D1" V 3454 6329 50  0000 L CNN
 F 1 "B120-E3" V 3545 6329 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 3500 6075 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 3500 6250 50  0001 C CNN
@@ -743,7 +718,6 @@ F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 3500 6250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 6100 3500 6050
-Connection ~ 3500 6050
 Wire Wire Line
 	3500 6050 3550 6050
 Wire Wire Line
@@ -757,10 +731,10 @@ Wire Wire Line
 	1600 6350 1600 6900
 Connection ~ 2350 6900
 $Comp
-L Device:R_Small R?
+L Device:R_Small R10
 U 1 1 60C69C54
 P 4000 6300
-F 0 "R?" V 3804 6300 50  0001 C CNN
+F 0 "R10" V 3804 6300 50  0001 C CNN
 F 1 "1k" V 4000 6300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 6300 50  0001 C CNN
 F 3 "~" H 4000 6300 50  0001 C CNN
@@ -768,10 +742,10 @@ F 3 "~" H 4000 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R11
 U 1 1 60C6A4AC
 P 4000 6600
-F 0 "R?" V 3804 6600 50  0001 C CNN
+F 0 "R11" V 3804 6600 50  0001 C CNN
 F 1 "1k" V 4000 6600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 6600 50  0001 C CNN
 F 3 "~" H 4000 6600 50  0001 C CNN
@@ -795,10 +769,10 @@ Wire Wire Line
 	4000 6900 3500 6900
 Connection ~ 3500 6900
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 60C739E3
 P 4300 6500
-F 0 "C?" V 4071 6500 50  0000 C CNN
+F 0 "C7" V 4071 6500 50  0000 C CNN
 F 1 "22u" V 4162 6500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 6500 50  0001 C CNN
 F 3 "~" H 4300 6500 50  0001 C CNN
@@ -806,10 +780,10 @@ F 3 "~" H 4300 6500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C8
 U 1 1 60C73E45
 P 4500 6300
-F 0 "C?" V 4271 6300 50  0000 C CNN
+F 0 "C8" V 4271 6300 50  0000 C CNN
 F 1 "22u" V 4362 6300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 6300 50  0001 C CNN
 F 3 "~" H 4500 6300 50  0001 C CNN
@@ -836,4 +810,67 @@ Wire Wire Line
 Connection ~ 4300 6050
 Wire Wire Line
 	4300 6050 4500 6050
+$Comp
+L power:+5V #PWR0101
+U 1 1 60C99A79
+P 4500 6050
+F 0 "#PWR0101" H 4500 5900 50  0001 C CNN
+F 1 "+5V" H 4515 6223 50  0000 C CNN
+F 2 "" H 4500 6050 50  0001 C CNN
+F 3 "" H 4500 6050 50  0001 C CNN
+	1    4500 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 6050
+Wire Wire Line
+	3500 6050 3300 6050
+Wire Wire Line
+	3300 6050 3300 6250
+Wire Wire Line
+	3300 6250 3150 6250
+Connection ~ 3500 6050
+Connection ~ 3150 6250
+$Comp
+L power:+24V #PWR0102
+U 1 1 60D28817
+P 650 6050
+F 0 "#PWR0102" H 650 5900 50  0001 C CNN
+F 1 "+24V" H 665 6223 50  0000 C CNN
+F 2 "" H 650 6050 50  0001 C CNN
+F 3 "" H 650 6050 50  0001 C CNN
+	1    650  6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0103
+U 1 1 60D293E7
+P 1000 4850
+F 0 "#PWR0103" H 1000 4700 50  0001 C CNN
+F 1 "+24V" H 1015 5023 50  0000 C CNN
+F 2 "" H 1000 4850 50  0001 C CNN
+F 3 "" H 1000 4850 50  0001 C CNN
+	1    1000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C9
+U 1 1 60D323A3
+P 1050 6450
+F 0 "C9" H 1138 6496 50  0000 L CNN
+F 1 "100uF" H 1138 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10.5" H 1050 6450 50  0001 C CNN
+F 3 "~" H 1050 6450 50  0001 C CNN
+	1    1050 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6350 1050 6050
+Connection ~ 1050 6050
+Wire Wire Line
+	1050 6050 650  6050
+Wire Wire Line
+	1050 6550 1050 6900
+Wire Wire Line
+	1050 6900 1600 6900
+Connection ~ 1600 6900
 $EndSCHEMATC

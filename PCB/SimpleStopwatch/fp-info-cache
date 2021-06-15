@@ -1,4 +1,4 @@
-16934021458337701
+16935645201165701
 !MyFootprints
 Connector_Lenovo_Power
 Lenovo laptop sqare power socket
@@ -12,6 +12,13 @@ FuseHolder_5x20mm
 
 0
 4
+2
+!MyFootprints
+Inductor_CD54_Sumida
+Simuda Inductance for DCDC converters
+https://products.sumida.com/products/pdf/CD54.pdf
+0
+2
 2
 !MyFootprints
 Jack_3.5mm_ST-025
