@@ -33,16 +33,16 @@
 
 
 
-#define DIGITS_NUM    6           //Количество сегментов
+#define DIGITS_NUM    6           						// Количество сегментов
 
-void initShiftLED(void);								//Инициализация перефирии для работы
-void printDigit(void);									//Вывод одного числа. Для динамической индикации.
+void initShiftLED(void);								// Инициализация перефирии для работы
+void printDigit(void);									// Вывод одного числа. Для динамической индикации.
 
-void setTimeToPrint(uint32_t seconds);					//Вывести время в часах, минутах и секундах. С разделением точкой
-void setFloatToPrint(float number, uint8_t dotMask);	//Вывести число с плавающей точкой, точка будет стоять в заданной позиции.
-void setIntToPrint(int32_t number);						//Вывести целое число.
+void setTimeToPrint(uint32_t seconds);					// Вывести время в часах, минутах и секундах. С разделением точкой
+void setFloatToPrint(float number, uint8_t dotMask);	// Вывести число с плавающей точкой, точка будет стоять в заданной позиции.
+void setIntToPrint(int32_t number);						// Вывести целое число.
 
-void dispPrintFloat(float number);						//ToDo: Убрать
-void moveDot(float number);								//ToDo: Переработать.
+void dispPrintFloat(float number);						// ToDo: Убрать
+void moveDot(float number);								// ToDo: Переработать.
 
 #endif
