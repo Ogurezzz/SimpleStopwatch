@@ -1,0 +1,74 @@
+Source:,/home/ogurezzz/Documents/Coding/GithubProjects/SimpleStopwatch/PCB/SimpleStopwatch/SimpleStopwatch.sch,,,,,,
+Date:,Пн 02 авг 2021 20:10:25,,,,,,
+Tool:,Eeschema 5.1.5+dfsg1-2build2,,,,,,
+Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value.py,,,,,,
+Component Count:,36,,,,,,
+,,,,,,,
+Individual Components:,,,,,,,
+,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Price
+,,C1,22u,Device:C_Small,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,https://www.chipdip.ru/product/grm32er61c226k,23
+,,C2,0.1u,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm188r71h104k,10
+,,C3,0.1u,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm188r71h104k,10
+,,C4,22p,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm1885c1h220j,6
+,,C5,22p,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm1885c1h220j,6
+,,C6,0.1u,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm188r71h104k,10
+,,C7,22u,Device:C_Small,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,https://www.chipdip.ru/product/grm32er61c226k,23
+,,C8,22u,Device:C_Small,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,https://www.chipdip.ru/product/grm32er61c226k,23
+,,C9,100uF,Device:CP_Small,Capacitor_SMD:CP_Elec_8x10.5,https://www.chipdip.ru/product0/535002535,9
+,,D1,B120-E3,Diode:B120-E3,Diode_SMD:D_SMA_Handsoldering,https://www.chipdip.ru/product/b340a-e3-61t-2,15
+,,H1,RESET,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,Печатная плата,200
+,,H2,MOSI,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+,,H3,MISO,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+,,H4,SCK,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+,,H5,+5V,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+,,H6,GND,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+,,J1,Switch,Connector:Screw_Terminal_01x02,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,https://www.chipdip.ru/product/dg308-2.54-02p-14-00ah,42
+,,J2,Power,Connector:Screw_Terminal_01x02,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,https://www.chipdip.ru/product/dg308-2.54-02p-14-00ah,42
+,,L1,L_Small,Device:L_Small,!MyFootprints:Inductor_CD54_Sumida,https://www.chipdip.ru/product/lqh43mn150k,21
+,,LED1,7SEG_3DIG_CC_v2,!MyElements:7SEG_3DIG_CC_v2,!MyFootprints:LED_7SEG_3DIG_CC_0.56,https://www.chipdip.ru/product/bc56-12ewa,260
+,,LED2,7SEG_3DIG_CC_v2,!MyElements:7SEG_3DIG_CC_v2,!MyFootprints:LED_7SEG_3DIG_CC_0.56,https://www.chipdip.ru/product/bc56-12ewa,260
+,,R1,R_Small,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R2,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R3,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R4,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R5,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R6,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R7,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R8,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R9,1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R10,5.1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,R11,1.8k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+,,U1,TPS5430DDA,Regulator_Switching:TPS5430DDA,Package_SO:TI_SO-PowerPAD-8_ThermalVias,https://www.chipdip.ru/product/tps5430ddar?from=suggest_product,160
+,,U2,ATmega328P-AU,MCU_Microchip_ATmega:ATmega328P-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,https://www.chipdip.ru/product/atmega88-20au?from=suggest_product,300
+,,U3,ULN2003,Transistor_Array:ULN2003,Package_SO:SOIC-16_4.55x10.3mm_P1.27mm,https://www.chipdip.ru/product/uln2003ad,30
+,,Y1,Crystal_Small,Device:Crystal_Small,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm,https://www.chipdip.ru/product0/9000523954,55
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Collated Components:,,,,,,,
+,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Price
+1,3,"C1, C7, C8",22u,Device:C_Small,Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder,https://www.chipdip.ru/product/grm32er61c226k,23
+2,3,"C2, C3, C6",0.1u,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm188r71h104k,10
+3,2,"C4, C5",22p,Device:C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product/grm1885c1h220j,6
+4,1,C9,100uF,Device:CP_Small,Capacitor_SMD:CP_Elec_8x10.5,https://www.chipdip.ru/product0/535002535,9
+5,1,D1,B120-E3,Diode:B120-E3,Diode_SMD:D_SMA_Handsoldering,https://www.chipdip.ru/product/b340a-e3-61t-2,15
+6,1,H1,RESET,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,Печатная плата,200
+7,1,H2,MOSI,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+8,1,H3,MISO,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+9,1,H4,SCK,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+10,1,H5,+5V,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+11,1,H6,GND,Mechanical:MountingHole_Pad,TestPoint:TestPoint_Pad_D1.0mm,~,0
+12,1,J1,Switch,Connector:Screw_Terminal_01x02,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,https://www.chipdip.ru/product/dg308-2.54-02p-14-00ah,42
+13,1,J2,Power,Connector:Screw_Terminal_01x02,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,https://www.chipdip.ru/product/dg308-2.54-02p-14-00ah,42
+14,1,L1,L_Small,Device:L_Small,!MyFootprints:Inductor_CD54_Sumida,https://www.chipdip.ru/product/lqh43mn150k,21
+15,2,"LED1, LED2",7SEG_3DIG_CC_v2,!MyElements:7SEG_3DIG_CC_v2,!MyFootprints:LED_7SEG_3DIG_CC_0.56,https://www.chipdip.ru/product/bc56-12ewa,260
+16,1,R1,R_Small,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+17,8,"R2, R3, R4, R5, R6, R7, R8, R9",1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+18,1,R10,5.1k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+19,1,R11,1.8k,Device:R_Small,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,https://www.chipdip.ru/product0/9000079736,2
+20,1,U1,TPS5430DDA,Regulator_Switching:TPS5430DDA,Package_SO:TI_SO-PowerPAD-8_ThermalVias,https://www.chipdip.ru/product/tps5430ddar?from=suggest_product,160
+21,1,U2,ATmega328P-AU,MCU_Microchip_ATmega:ATmega328P-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,https://www.chipdip.ru/product/atmega88-20au?from=suggest_product,300
+22,1,U3,ULN2003,Transistor_Array:ULN2003,Package_SO:SOIC-16_4.55x10.3mm_P1.27mm,https://www.chipdip.ru/product/uln2003ad,30
+23,1,Y1,Crystal_Small,Device:Crystal_Small,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm,https://www.chipdip.ru/product0/9000523954,55

@@ -7,6 +7,7 @@
 #include <avr/signature.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 #include "shiftLED.h"
 
 volatile uint32_t secondsPassed = 0;
@@ -45,6 +46,9 @@ int main(void)
 {
 	asm volatile("cli"); 						// Выключаем прерывания
 	initShiftLED();								// Настройка семисегментных индикаторов
+	/*DIGIT_PORT=0xff;
+	LED_PORT=0xff;
+	_delay_ms(1000);*/
 
 	// Настройка кнопок
 	PCICR |= _BV(PCIE1); 						// Включаем прерывания по любому изменению на портах PCINT14..8. Нам нужна кнопка на 8м порту.
